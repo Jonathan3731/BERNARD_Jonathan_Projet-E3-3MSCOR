@@ -279,7 +279,7 @@ Preuve de lancement des containers :
 
 ![image](https://github.com/user-attachments/assets/ff36692d-f018-42e8-bb99-35860dda18d1)
 
-Preuve du fonctionnement des appplications passant par le reverse proxy :
+Preuves du fonctionnement des appplications passant par le reverse proxy :
 
 ![image](https://github.com/user-attachments/assets/076e6969-b2bb-4a8d-a37f-348249f0cb70)
 ![image](https://github.com/user-attachments/assets/928035a9-6585-4b01-88ea-4584b094aad5)
