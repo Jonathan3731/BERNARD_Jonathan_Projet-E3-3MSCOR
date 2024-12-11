@@ -292,6 +292,37 @@ Preuve du fonctionnement de l'appplication avec accès interne :
 
 ![image](https://github.com/user-attachments/assets/0be2296e-da4e-4f6a-af9e-b4b75aca84e4)
 
+## Push des applications vers Dockerhub
+J'ai d'abord créé mon repository Docker sur le site :
+
+![image](https://github.com/user-attachments/assets/fc29367b-d7ab-43e7-bd25-b187bf5cee77)
+
+Puis j'ai répété ces commandes pour chaque image :
+```python
+docker tag <id image> <username>/<nom du repository docker>:<nom du tag>
+docker push <username>/<nom du repository>:<nom du tag>
+
+Par exemple : docker tag c71b491bf6fc jonathan57/projet_bernard:projet_final-django-datta-able_jb
+              docker push jonathan57/projet_bernard:projet_final-django-datta-able_jb
+```
+Preuves de fonctionnement du push vers Dockerhub :
+![image](https://github.com/user-attachments/assets/12802564-4c3f-441e-911b-7b0d46875949)
+![image](https://github.com/user-attachments/assets/6a0cb914-af45-4a08-9776-6e6d73838fd5)
+
+## Questions DevOPS
+
+Qu'est-ce que le DevOps ?
+Le DevOps, c’est un ensemble de pratiques qui combinent le développement logiciel. Le but principal est d’améliorer la collaboration entre les équipes pour livrer des projets plus rapidement, tout en garantissant la qualité.
+
+En quoi le devops vous a aidé dans cette mission ?
+Le DevOps nous a permis de travailler de façon plus organisée et de gagner du temps.
+
+Votre chef de projet vous demande de comparer l'utilisation de Docker avec des machines virtuelles. Que répondrez-vous ?
+Docker est plus léger que les machines virtuelles. Une VM embarque tout un système d’exploitation, ce qui consomme beaucoup de ressources.
+
+À l'aide de vos connaissances personnelles, citer un ou plusieurs autres outils similaires à docker qui pourrait aider votre équipe à livrer et maintenir ce projet client.
+Il existe Kubernetes et PodMan comme outils similaires à Docker.
+
 
 
 
