@@ -288,7 +288,7 @@ Preuve du fonctionnement des appplications passant par le reverse proxy :
 ![image](https://github.com/user-attachments/assets/24336fab-6a21-406c-b2a3-161cb78aab0c)
 ![image](https://github.com/user-attachments/assets/96c7dd1b-a1c0-4b2b-9c82-e48fd74a0107)
 
-Preuve du fonctionnement des appplications avec accès interne :
+Preuve du fonctionnement de l'appplication avec accès interne :
 
 ![image](https://github.com/user-attachments/assets/0be2296e-da4e-4f6a-af9e-b4b75aca84e4)
 
