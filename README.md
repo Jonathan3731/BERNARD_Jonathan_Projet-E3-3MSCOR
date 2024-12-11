@@ -30,7 +30,7 @@ Lignes du Docker compose pour toutes les applications
 
 Lignes pour NGINX :
 
-![Capture d'écran 2024-12-11 103416](https://github.com/user-attachments/assets/dd0b7cf4-f6ac-4a38-90e0-f0126efc5a86)
+![image](https://github.com/user-attachments/assets/415e8d51-eb25-4600-a41a-b1e2a679ae14)
 
 Optimisation des Dockerfile :
 
@@ -38,8 +38,9 @@ Optimisation des Dockerfile :
 
 Dockerfile de l'application HTML :
 
-![Capture d'écran 2024-12-11 101813](https://github.com/user-attachments/assets/77aba886-bfbc-43c0-8cce-2e6d56e9a7ae)
+![image](https://github.com/user-attachments/assets/04ef877b-a230-409f-b5d3-f671e83afa9c)
 
-Modification du dossier de l’application HTML en conséquence :
+Modification du dossier de l’application HTML en conséquence, je mets aussi le dossier HTML dans le dossier nginx pour faciliter son déploiement et son accès. Pour mon application HTML il suffit juste de prendre une image NGINX optimisé, copier les fichiers HTML dans le dossier NGINX du container pour que l'application fonctionne.
 
-![Capture d'écran 2024-12-11 101840](https://github.com/user-attachments/assets/9e08528d-00f5-4393-a739-36204d436a16)
+![image](https://github.com/user-attachments/assets/1d776a03-8a03-48e2-ae7e-10ff521c0b0f)
+
