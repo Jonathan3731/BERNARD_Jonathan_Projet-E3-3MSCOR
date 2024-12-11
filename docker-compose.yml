@@ -1,0 +1,75 @@
+version: '3.8'
+services:
+  django-argon-dashboard_jb:
+    container_name: django-argon-dashboard_jb
+    restart: always
+    ports :
+      - "1001:1001"
+    build: "./django-argon-dashboard_jb"
+    networks:
+      - db_network
+      - web_network
+  django-coreui_jb:
+    container_name: django-coreui_jb
+    restart: always
+    build: "./django-coreui_jb"
+    networks:
+      - db_network
+      - web_network
+  django-datta-able_jb:
+    container_name: django-datta-able_jb
+    restart: always
+    build: "./django-datta-able_jb"
+    networks:
+      - db_network
+      - web_network
+  django-material-dashboard_jb:
+    container_name: django-material-dashboard_jb
+    restart: always
+    build: "./django-material-dashboard_jb"
+    networks:
+      - db_network
+      - web_network
+  django-pixel_jb:
+    container_name: django-pixel_jb
+    restart: always
+    build: "./django-pixel_jb"
+    networks:
+      - db_network
+      - web_network
+  django-soft-ui-design_jb:
+    container_name: django-soft-ui-design_jb
+    restart: always
+    build: "./django-soft-ui-design_jb"
+    networks:
+      - db_network
+      - web_network
+  nginx_jb:
+    container_name: nginx_jb
+    restart: always
+    image: "nginx:stable-alpine-slim"
+    ports:
+      - "80:80"
+      - "8082:8082"
+      - "8083:8083"
+      - "8084:8084"
+      - "8085:8085"
+      - "8086:8086"
+      - "8087:8087"
+    volumes:
+      - ./nginx/html:/usr/share/nginx/html
+      - ./nginx:/etc/nginx/conf.d
+    networks:
+      - web_network
+    depends_on: 
+      - django-coreui_jb
+      - django-datta-able_jb
+      - django-material-dashboard_jb
+      - django-pixel_jb
+      - django-soft-ui-design_jb
+networks:
+  db_network:
+    driver: bridge
+  web_network:
+    driver: bridge
+ 
